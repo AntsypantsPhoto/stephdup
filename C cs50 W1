@@ -1,4 +1,5 @@
-/ fourth go at Mario final scene with steps
+// fourth go at Mario final scene with steps
+// user prompted for size between 1 and 8
 
 #include <stdio.h>
 #include <cs50.h>
@@ -11,8 +12,7 @@ int main(void)
     {
     n = get_int("height: ");
     }
-    while (n < 1);
-    while (n > 8); 
+    while (n < 1 || n > 8); 
     for (int h = 0; h < n; h++)
     {
         for (int w = 0; w < n; w++)

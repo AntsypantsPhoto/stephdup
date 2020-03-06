@@ -1,1 +1,26 @@
+/ fourth go at Mario final scene with steps
+
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+
+{
+    int n;
+    do
+    {
+    n = get_int("height: ");
+    }
+    while (n < 1);
+    while (n > 8); 
+    for (int h = 0; h < n; h++)
+    {
+        for (int w = 0; w < n; w++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+
+}
 
